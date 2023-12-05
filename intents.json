@@ -1,0 +1,34 @@
+{"intents": [
+    {"tag": "A",
+    "patterns": ["hallo", "hai", "hey"],
+    "responses": ["Hai", "Hallo", "ada yang bisa saya dibantu", "selamat datang di aplikasi donor darah"]
+    },
+    {"tag": "B",
+    "patterns" : ["prosedur donor darah", "bagaimana cara donor darah", "donor darah", "cara donor darah", "prosedur donor darah", "langkah-langkah donor darah"],
+    "responses": ["Tahap Registrasi : Mengisi formulir pendaftaran dan kuisioner kesehatan \n| Tahap Pemeriksaan Pendahuluan : Pengukuran berat badan, Pemeriksaan kadar haemoglobin darah, Pemeriksaan golongan darah bagi pendonor pemula \n| Tahap Pemeriksaan Kesehatan oleh Dokter : Anamnesis, Pemeriksaan tekanan darah, Pemeriksaan fisik sederhana \n| Tahap Pengambilan Darah Donor : Cuci lengan donor, Pengambilan darah, Pengambilan sampel darah \n| Tahap Administrasi : Mengambil kartu donor dan vitamin \n| Tahap Pemulihan : Pendonor dianjurkan untuk istirahat dan menikmati hidangan ringan yang kami sajikan"]
+    },
+    {"tag": "C",
+    "patterns" : ["prosedur permintaan darah", "bagaimana cara minta darah", "minta darah", "cara minta darah", "prosedur permintaan darah", "langkah-langkah minta darah", "cara dapat darah"],
+    "responses": ["Ketahui terlebih dahulu golongan darah. Jika belum mengetahui golongan darah dapat melakukan pengecekan di PMI maupun di beberapa tempat berobat.Meminta surat keterangan dokter untuk dapat menjadi pengantar kebutuhan permintaan darah ke PMI.Serahkan surat keterangan pengantar permintaan darah kepada PMI dan nanti akan diberikan darah sesuai kebutuhan.Melakukan transaksi pembayaran untuk pengambilan darah. Untuk PMI regional DIY biaya per kantong darah dikenakan sebesar Rp 350.000."] 
+    },
+    {"tag": "D",
+    "patterns" : ["Apakah dengan Donor Darah dapat menyehatkan?"],
+    "responses": ["Ya, Bila seseorang mendonorkan darahnya, tubuhnya akan menggantikan volume darah dalam waktu 48 jam setelah donor, dan semua sel darah merah yang hilang akan benar-benar diganti dalam waktu empat sampai delapan minggu dengan sel-sel darah merah yang baru. Proses pembentukan sel-sel darah merah yang baru akan membantu tubuh tetap sehat dan bekerja lebih efisien dan produktif."]
+    },
+    {"tag": "E",
+    "patterns" : ["Mengapa harus donor darah ?"],
+    "responses":["Karena Donor darah adalah kegiatan yang positif dan mulia dan kita bisa menolong sesama. Donor darah bisa membantu mereka yang membutuhkan darah dalam situasi mendesak. Karena seringkali saat pasien dalam kondisi kritis, pihak PMI atau rumah sakit tak memiliki stok darah yang cukup. Nyatanya, donor darah tak hanya bermanfaat bagi penerima (resipien) saja, namun pendonor juga menerima manfaat yang luar biasa. Banyak penelitian yang berhasil membuktikan secara medis bahwa mendonorkan darah sebenarnya menguntungkan"]
+    },
+    {"tag": "F",
+    "patterns": ["Apa syarat-syarat untuk mendonorkan darah?"],
+    "responses": ["Sehat jasmani dan rohani; Usia 17 sampai dengan 60 tahun dan Sampai 65 tahun untuk pendonor darah yang sudah rutin mendonorkan darahnya sampai akhirnya berhenti atas pertimbangan dokter; Berat badan minimal 45 Kg; Tekanan darah normal (Sistole 100 - 180 dan Diastole 70 - 100); Kadar haemoglobin 12,5-17,0 gr/dL%; Demi keamanan dan keselamatan pendonor sesuai dengan PERMENKES 91 Tahun 2015 interval waktu sejak donor darah terkahir minimal 2 bulan."]
+    },
+    {"tag": "G",
+    "patterns": ["Jangan menyumbangkan darah jika?", "Kapan saat tidak boleh mendonor darah?"],
+    "responses": ["Mempunyai penyakit jantung dan paru; menderita kanker; menderita tekanan darah tinggi (hipertensi); menderita kencing manis (diabetes militus); memiliki kecenderungan perdarahan abnormal atau kelainan darah lainnya; menderita epilepsi dan sering kejang; menderita atau pernah menderita hepatitis B atau C; mengidap sifilis; ketergantungan narkoba; kecanduan minuman beralkohol; mengidap atau beresiko tinggi terhadap HIV/AIDS; dokter menyarankan untuk tidak menyubangkan darah karena alasan kesehatan"]
+    },
+    {"tag": "H",
+    "patterns" : ["Kapan harus menunda untuk menyumbangkan darah ?", "kapan harus menunda donor?"],
+    "responses": ["Sedang sakit demam atau influenza tunggu 1 minggu setelah sembuh; setalah cabut gigi, tunggu 5 hari setalah sembuh; setelah operasi kecil, tunggu 6 bulan; setelah operasi besar, tunggu 1 tahun; setelah transfusi, tunggu 1 tahun; setelah tato, tindik, tusuk jarum, dan transplantasi tunggu 1 tahun; bila kontak erat dengan penderita hepatitis, tunggu 1 tahun; sedang hamil, tunggu 6 setelah melahirkan; sedang menyusui, tunggu 3 bulan setelah berhenti menyusui; setelah sakit malaria, tunggu 3 tahun setalah bebas dari gejala malaria; setelah berkunjung dari daerah endemis malaria, tunggu 1 tahun; bila tinggal di daerah endemis malaria selama 5 tahun berturut-turut, tunggu 3 tahun setelah keluar dari daerah tersebut; bila sakit tipus, tunggu 6 bulan setelah sembuh; setelah vaksin, tunggu 8 minggu; ada gejala alergi tunggu 1 minggu setalah sembuh; ada infeksi kulit pada daerah yang akan ditusuk, tunggu 1 minggu setelah sembuh"]
+    }
+]}
