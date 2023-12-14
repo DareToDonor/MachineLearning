@@ -3,6 +3,7 @@ import json
 import pickle
 import numpy as np
 import tensorflow as tf
+import tensorflowjs as tfjs
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -15,6 +16,7 @@ intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model("chatbot_model.h5")
+tfjs.converters.save_keras_model(model, 'tfjs_model')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
