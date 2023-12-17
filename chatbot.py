@@ -1,9 +1,9 @@
+
 import random
 import json
 import pickle
 import numpy as np
 import tensorflow as tf
-import tensorflowjs as tfjs
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -16,7 +16,6 @@ intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model("chatbot_model.h5")
-tfjs.converters.save_keras_model(model, 'tfjs_model')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -53,10 +52,15 @@ def get_response(intents_list, intents_json):
             break
     return result
 
-print("HALLO INI CHATBOT")
+print("Hai, apakah ada yang bisa Mido bantu?")
 
 while True:
-    message = input("You: ") 
+    message = input("You: ")
+
+    if message.lower() == 'exit':
+        print("Bot: Goodbye!")
+        break
+
     ints = predict_class(message)
     res = get_response(ints, intents)
     print("Bot:", res)
