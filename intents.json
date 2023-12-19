@@ -51,7 +51,7 @@
                   "Keluarga saya butuh darah",
                   "Apakah saya bisa mendapatkan darah?"
                   ],
-    "responses": ["Ketahui terlebih dahulu golongan darah. \nJika belum mengetahui golongan darah dapat melakukan pengecekan di PMI maupun di beberapa tempat berobat. \nMeminta surat keterangan dokter untuk dapat menjadi pengantar kebutuhan permintaan darah ke PMI. \nSerahkan surat keterangan pengantar permintaan darah kepada PMI dan nanti akan diberikan darah sesuai kebutuhan. \nMelakukan transaksi pembayaran untuk pengambilan darah. \nUntuk PMI regional DIY biaya per kantong darah dikenakan sebesar Rp 350.000."]
+    "responses": ["Ketahui terlebih dahulu golongan darah. \nJika belum mengetahui golongan darah dapat melakukan pengecekan di PMI maupun di beberapa tempat berobat. \nMeminta surat keterangan dokter untuk dapat menjadi pengantar kebutuhan permintaan darah ke PMI. \nSerahkan surat keterangan pengantar permintaan darah kepada PMI dan nanti akan diberikan darah sesuai kebutuhan. \nMelakukan transaksi pembayaran untuk pengambilan darah. \nUntuk biaya per kantong darah dikenakan sebesar Rp 350.000."]
     },
     {"tag": "D",
     "patterns" : ["Apakah dengan donor darah dapat menyehatkan?",
