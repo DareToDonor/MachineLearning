@@ -72,6 +72,11 @@ model_O, history_O = build_and_train_model(X_O_scaled, y_O_scaled, X_O_scaled, y
 model_B, history_B = build_and_train_model(X_B_scaled, y_B_scaled, X_B_scaled, y_B_scaled)
 model_AB, history_AB = build_and_train_model(X_AB_scaled, y_AB_scaled, X_AB_scaled, y_AB_scaled)
 
+model_A.save('model_A.h5')
+model_O.save('model_O.h5')
+model_B.save('model_B.h5')
+model_AB.save('model_AB.h5')
+
 tahun_berikutnya = 2024
 tanggal_2024 = pd.date_range(start=f'{tahun_berikutnya}-01-01', end=f'{tahun_berikutnya+1}-12-31', freq='D')
 data_2024 = pd.DataFrame({'hari': tanggal_2024.day, 'bulan': tanggal_2024.month, 'tahun': tanggal_2024.year})
