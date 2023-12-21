@@ -96,7 +96,7 @@ def predictGet():
 
         # Group by month and calculate the sum for each month
         data_tanggal.index = data_tanggal.index.to_period("M")
-        data_bulanan = data_tanggal.groupby(data_tanggal.index).sum().reset_index()
+        data_bulanan = data_tanggal.groupby(data_tanggal.index).sum().reset_index().round(0)
         data_bulanan.index = data_bulanan['tanggal'].dt.to_timestamp()
 
         # Drop the 'tanggal' column
@@ -105,7 +105,10 @@ def predictGet():
         data_bulanan['month'] = data_bulanan.index.strftime('%B')
         data_bulanan['year'] = data_bulanan.index.strftime('%Y')
         data_bulanan.reset_index(drop=True, inplace=True)
-        data_prediksi_dict = data_bulanan.to_dict(orient='records')
+        data_prediksi_dict = data_bulanan.astype({'prediksi_permintaan_A': 'int', 
+                                                  'prediksi_permintaan_AB': 'int', 
+                                                  'prediksi_permintaan_B': 'int', 
+                                                  'prediksi_permintaan_O': 'int'}).to_dict(orient='records')
 
         # Return the JSON response
         return jsonify({"status": "success",
@@ -149,4 +152,4 @@ def chat():
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True,host='0.0.0.0', port=8080)
