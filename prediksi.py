@@ -120,3 +120,7 @@ data_bulanan.index = data_bulanan['tanggal'].dt.to_timestamp()
 data_bulanan = data_bulanan.drop('tanggal', axis=1)
 data_bulanan = data_bulanan.astype(int)
 print(data_bulanan)
+
+data_bulanan['tanggal'] = data_bulanan.index
+array_data_bulanan = data_bulanan.values
+print(array_data_bulanan)
