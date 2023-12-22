@@ -24,8 +24,8 @@ def make_predictions(model, scaler_X, scaler_y, input_data):
     predictions = scaler_y.inverse_transform(predictions_scaled)
     return predictions
 
-data = pd.read_csv('blood_demand_dataset.csv', parse_dates=['Date'])
-data = data.drop(['Location'], axis=1)
+data = pd.read_csv('blood_demand_surabaya_data.csv', parse_dates=['Date'])
+data = data.drop(['Tempat'], axis=1)
 
 data['hari'] = data['Date'].dt.day
 data['bulan'] = data['Date'].dt.month
@@ -120,7 +120,3 @@ data_bulanan.index = data_bulanan['tanggal'].dt.to_timestamp()
 data_bulanan = data_bulanan.drop('tanggal', axis=1)
 data_bulanan = data_bulanan.astype(int)
 print(data_bulanan)
-
-data_bulanan['tanggal'] = data_bulanan.index
-array_data_bulanan = data_bulanan.values
-print(array_data_bulanan)
